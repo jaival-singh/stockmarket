@@ -1,0 +1,25 @@
+[project]
+name = "nifty100-cassandra-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "jaival-singh",email = "jaival.singh@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "yfinance (>=0.2.56,<0.3.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+    "cassandra-driver (>=3.29.2,<4.0.0)",
+    "matplotlib (>=3.10.1,<4.0.0)",
+    "pyspark (>=3.5.5,<4.0.0)",
+    "dotenv (>=0.9.9,<0.10.0)"
+]
+
+[tool.poetry]
+packages = [{include = "nifty100_cassandra_project", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
