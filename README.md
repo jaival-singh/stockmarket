@@ -102,8 +102,8 @@ stocks (
     volume BIGINT,
     PRIMARY KEY (ticker, date)
 )
+```
 
----
 
 ### inspect_bronze.py
 **Purpose**
@@ -149,7 +149,7 @@ stocks_silver (
     volume BIGINT,
     PRIMARY KEY (ticker, date)
 )
----
+```
 
 
 ### `inspect_silver.py`
@@ -188,7 +188,7 @@ gold_stocks (
     rsi DECIMAL,
     PRIMARY KEY (ticker, date)
 )
----
+```
 
 # 📊 Analytics & Insights Layer
 
@@ -228,8 +228,7 @@ top_performing_stocks_by_percent (
     end_price DECIMAL,
     PRIMARY KEY (dummy_partition, percent_change)
 ) WITH CLUSTERING ORDER BY (percent_change DESC);
-
----
+```
 
 # 🟢 Quarterly Top Performing Stocks
 
@@ -270,7 +269,7 @@ worst_performing_stocks_by_percent (
     end_price DECIMAL,
     PRIMARY KEY (dummy_partition, percent_change)
 ) WITH CLUSTERING ORDER BY (percent_change ASC);
----
+```
 
 
 ### `inspect_worst_performers.py`
