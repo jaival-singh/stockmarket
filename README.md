@@ -230,7 +230,6 @@ top_performing_stocks_by_percent (
 ) WITH CLUSTERING ORDER BY (percent_change DESC);
 ```
 
-# 🟢 Quarterly Top Performing Stocks
 
 ### `inspect_topperformersquaterly.py`
 **Purpose**
