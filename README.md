@@ -107,7 +107,6 @@ stocks (
 
 ### inspect_bronze.py
 **Purpose**
-
 -Validate Bronze layer data quality
 -Checks Performed
 -Total row count
