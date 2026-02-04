@@ -70,7 +70,7 @@ Analytics Layer (Performance & Visual Insights)
 │ ├── secure-connect-database.zip
 │ └── database-token.json
 └── README.md
-'''
+```
 
 ---
 
@@ -101,7 +101,7 @@ stocks (
     adj_close FLOAT,
     volume BIGINT,
     PRIMARY KEY (ticker, date)
-)'''
+)```
 
 ### inspect_bronze.py
 **Purpose**
@@ -146,7 +146,7 @@ stocks_silver (
     adj_close DECIMAL,
     volume BIGINT,
     PRIMARY KEY (ticker, date)
-)'''
+)```
 
 
 ### `inspect_silver.py`
@@ -184,7 +184,7 @@ gold_stocks (
     ema_50 DECIMAL,
     rsi DECIMAL,
     PRIMARY KEY (ticker, date)
-)'''
+)```
 
 # 📊 Analytics & Insights Layer
 
@@ -223,7 +223,7 @@ top_performing_stocks_by_percent (
     start_price DECIMAL,
     end_price DECIMAL,
     PRIMARY KEY (dummy_partition, percent_change)
-) WITH CLUSTERING ORDER BY (percent_change DESC); '''
+) WITH CLUSTERING ORDER BY (percent_change DESC); ```
 
 # 🟢 Quarterly Top Performing Stocks
 
@@ -263,7 +263,7 @@ worst_performing_stocks_by_percent (
     start_price DECIMAL,
     end_price DECIMAL,
     PRIMARY KEY (dummy_partition, percent_change)
-) WITH CLUSTERING ORDER BY (percent_change ASC); '''
+) WITH CLUSTERING ORDER BY (percent_change ASC); ```
 
 
 ### `inspect_worst_performers.py`
