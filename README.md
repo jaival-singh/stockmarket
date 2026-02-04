@@ -52,7 +52,7 @@ Analytics Layer (Performance & Visual Insights)
 ---
 
 ## 📂 Project Structure
-
+```text
 ├── insert_bronze.py
 ├── inspect_bronze.py
 ├── silver.py
@@ -101,11 +101,12 @@ stocks (
     adj_close FLOAT,
     volume BIGINT,
     PRIMARY KEY (ticker, date)
-)
-inspect_bronze.py
-Purpose
+)'''
 
-Validate Bronze layer data quality
+### inspect_bronze.py
+**Purpose**
+
+-Validate Bronze layer data quality
 
 Checks Performed
 
