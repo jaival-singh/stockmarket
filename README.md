@@ -107,13 +107,15 @@ stocks (
 
 ### inspect_bronze.py
 **Purpose**
--Validate Bronze layer data quality
--Checks Performed
--Total row count
--Column count
--Sample records
--NULL value analysis using PySpark
--Record count per ticker
+- Validate Bronze layer data quality
+
+**Checks Performed**
+- Total row count  
+- Column count  
+- Sample records  
+- NULL value analysis using PySpark  
+- Record count per ticker  
+
 
 ## ⚪ Silver Layer – Cleaned & Standardized Data
 
