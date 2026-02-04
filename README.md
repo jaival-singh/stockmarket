@@ -109,18 +109,12 @@ stocks (
 **Purpose**
 
 -Validate Bronze layer data quality
-
-Checks Performed
-
-Total row count
-
-Column count
-
-Sample records
-
-NULL value analysis using PySpark
-
-Record count per ticker
+-Checks Performed
+-Total row count
+-Column count
+-Sample records
+-NULL value analysis using PySpark
+-Record count per ticker
 
 ## ⚪ Silver Layer – Cleaned & Standardized Data
 
